@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<meta charset="UTF-8">
+<title>Página 66</title>
+
+<style>
+    *  {
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    body {
+        width:100vw;
+        height:100vh;
+        background-color:rgba(208, 227, 226, 0.882)
+    }
+</style>
+
+<text1>
+    Resolva a equação a seguir:
+    <br><br>
+    3
+x
+³
++
+4
+x
+²
+−
+5
+x
++
+6
+=
+0
+</text1>
+
+<style>
+    text1 {
+        position:absolute;
+        top: 19%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: clamp(1rem, 2.5vw, 2.5rem);
+        color:rgb(0, 0, 0); 
+    }
+</style>
+
+<script>
+  function verificarResposta3() {
+    const opcoes = document.getElementsByName("resposta3");
+    let escolhida = "";
+
+    for (let i = 0; i < opcoes.length; i++) {
+      if (opcoes[i].checked) {
+        escolhida = opcoes[i].value;
+      }
+    }
+
+    const resultado = document.getElementById("resultado3");
+
+    if (escolhida === "Ns") {
+      resultado.textContent = "Pode continuar!";
+      resultado.style.color = "blue";
+      document.querySelector("button2").hidden = false; 
+    } else {
+      resultado.textContent = "Errado!";
+      resultado.style.color = "red";
+      document.querySelector("button2").hidden = true; 
+    }
+    if (escolhida === "cer") {
+      resultado.textContent = "Correto!";
+      resultado.style.color = "green";
+      document.querySelector("button2").hidden = false; 
+    }
+  }
+</script>
+
+<div class="pergunta3">
+
+  <label9>
+    <input type="radio" name="resposta3" value="Err2">
+    -2 e 3
+  </label9><br><br>
+
+  <label11>
+    <input type="radio" name="resposta3" value="Err1">
+    3 e 1
+  </label11><br><br>
+
+  <label10>
+    <input type="radio" name="resposta3" value="cer">
+    -2 e 1
+  </label10><br><br>
+
+  <label12>
+    <input type="radio" name="resposta3" value="Ns">
+    Não sei
+  </label12><br><br>
+
+<button onclick="verificarResposta3()" style="padding:10px 24px; border:none; background:#3d718b; color:white; border-radius:9px;">
+Verificar resposta
+</button>
+  <p id="resultado3"></p>
+</div>
+
+<button2 hidden="true">
+    <a href="Pag7.html" class="btnContinuar">Continuar</a>
+</button2>
+
+<style>
+    .pergunta3 {
+        position:absolute;
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: clamp(1.2rem, 2.5vw, 2.1rem);
+        color:black;   
+    }
+    label9, label11, label12, label10 {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
+        color:rgb(0, 0, 0);   
+    }
+</style>
+
+<style>
+    button2 {
+        position:absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: clamp(2.1rem, 2.5vw, 2.9rem);
+        color:rgb(59, 95, 178);   
+    }
+    button2:hover {
+        background-color: #b2afd5;
+        cursor: pointer;
+    }
+    .btnContinuar {
+        text-decoration: none;
+        font-family: comic sans ms;
+        color: rgb(5, 4, 4);
+    }
+</style>
+
+</html>
