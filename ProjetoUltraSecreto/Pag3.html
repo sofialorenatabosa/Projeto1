@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<meta charset="UTF-8">
+
+<title>Página 3</title>
+
+<style>
+    * {
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    body {
+        width:100vw;
+        height:100vh;
+        background-color:rgba(137, 31, 82, 0.627)
+    }
+</style>
+
+<text1>
+    Qual é o seu nome? 
+</text1>
+
+<style>
+    text1 {
+        position:absolute;
+        top: 21%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: clamp(1.4rem, 2.5vw, 2.4rem);
+        color:white;   
+    }
+    textarea {
+        position:absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: clamp(1rem, 2.5vw, 2.4rem);
+        color:rgb(2, 2, 2);   
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    button1 {
+        position:absolute;
+        background-color: rgb(60, 94, 196);
+        top: 53%;
+        left: 50%;
+        padding: clamp(12px, 1.2vw, 21px) clamp(46px, 1.5vw, 89px);
+        transform: translate(-50%, -50%);
+    }
+    .btnContinuar {
+        text-decoration: none;
+        font-family: comic sans ms;
+        color: rgb(246, 245, 245);
+    }
+    button1:hover {
+        background-color: #0a3e7c;
+        cursor: pointer;
+    }
+</style>
+
+<textarea id="nome" name="nome" rows="1" cols="32" placeholder="Digite seu nome aqui"></textarea>
+
+<button1>
+    <a href="Pag4.html" class="btnContinuar">Continuar</a>
+</button1>
+
+</html>
